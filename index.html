@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Practice</title>
+  <title>Portfolio</title>
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
   <!-- Font Awesome 5 Icons -->
@@ -18,14 +18,14 @@
 	  <header>
 	    <input type="checkbox" id="nav" />
 	    <label id="test-me">
-	      My<span>Profile</span>
+	      My<span>Portfolio</span>
 	    </label>
 	    <ul>
-	      <li>Home</li>
-	      <li>About</li>
-	      <li>Skills</li>
-	      <li>Projects</li>
-	      <li>Contacts</li>
+	      <li onclick="location.href = '#banner'">Home</li>
+	      <li onclick="location.href = '#About'">About</li>
+	      <li onclick="location.href = '#Skills'">Skills</li>
+	      <li onclick="">Projects</li>
+	      <li onclick="">Contacts</li>
 	    </ul>
 	    <label for="nav">
 	      <i class="fas fa-bars"></i>
@@ -50,11 +50,40 @@
 	      </div>
 	    </section>
 	    <section id="Skills">
-	      
+	      <p class="tool-type">Programming Languages</p>
+	      <div class="tools">
+	        <div class="tool">
+	          <img src="images/html.png" alt="html">
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, inventore.</p>
+	        </div>
+	        <div class="tool">
+	          <img src="images/css.png" alt="css">
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, inventore.</p>
+	        </div>
+	        <div class="tool">
+	          <img src="images/js.png" alt="javascript">
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, inventore.</p>
+	        </div>
+	        <div class="tool">
+	          <img src="images/python.jpeg" alt="python">
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, inventore.</p>
+	        </div>
+	        <div class="tool">
+	          <img src="images/sql.jpeg" alt="sql">
+	          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, inventore.</p>
+	        </div>
+	      </div>
+	      <p class="tool-type">Frameworks</p>
+	      <div class="tools">
+  	      <div class="tool">
+  	        <img src="images/reactjs.png" alt="reactjs">
+  	        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere, dolorem?</p>
+  	      </div>
+	      </div>
 	    </section>
 	  </main>
 	</div>
 	
-  <script src="practice.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
