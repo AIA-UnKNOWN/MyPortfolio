@@ -158,7 +158,6 @@ label[for='nav']:active {
 #About {
   border: 1px solid;
   background: #363140;
-  transition-duration: 1s;
 }
 
 #centered {
@@ -182,7 +181,10 @@ label[for='nav']:active {
 }
 
 #Skills {
-  transition-duration: 1s;
+  background-image: url('images/isom-coding.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .tool-type {
@@ -191,6 +193,58 @@ label[for='nav']:active {
   font-size: 1.5em;
   text-align: center;
   padding: 15px 0;
+  color: #ff5b5b;
+  margin: 10px auto;
+  position: relative;
+  background: #333333;
+  animation: animateText 2s .5s infinite;
+}
+
+.tool-type::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 100%;
+  background: #ff5b5b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  animation: animateBar 2s .5s infinite;
+}
+
+@keyframes animateText {
+  0% {
+    color: #ff5b5b;
+  }
+  50% {
+    color: #46ff78;
+  }
+  100% {
+    color: #ff5b5b;
+  }
+}
+
+@keyframes animateBar {
+  0% {
+    background: #ff5b5b;
+    left: 0;
+    transform: rotate(0deg);
+  }
+  50% {
+    background: #46ff78;
+    left: 100%;
+    transform: rotate(720deg);
+  }
+  100% {
+    background: #ff5b5b;
+    left: 0;
+    transform: rotate(0deg);
+  }
+}
+
+.tool-type:first-child {
+  margin-top: 0;
 }
 
 .tools {
@@ -200,15 +254,14 @@ label[for='nav']:active {
 }
 
 .tool {
-  /* border: 1px solid black; */
   width: 150px;
   border-radius: 10px;
   margin: 5px;
   box-shadow: 0 2px 7px black;
+  background: #fff;
 }
 
 .tool img {
-  /* border: 1px solid black; */
   width: 100%;
   height: 150px;
   border-radius: 10px 10px 0 0;
@@ -219,6 +272,7 @@ label[for='nav']:active {
   font-weight: 500;
   padding: 0 5px 5px;
   line-height: 12px;
+  text-align: center;
 }
 
 
@@ -255,5 +309,9 @@ label[for='nav']:active {
   .tools {
     width: 650px;
     margin: auto;
+  }
+  .tool-type {
+    width: 600px;
+    border-radius: 5px;
   }
 }
